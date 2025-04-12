@@ -1,0 +1,51 @@
+.flex {
+  display: flex;
+}
+
+.invert {
+  filter: invert(1);
+}
+
+.spotify-play-btn {
+    
+  background-color: #1db954; /* Spotify green */
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+  position: absolute;
+  top: 105px;
+  left: 100px;
+  transform: translate(0%, 0%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.spotify-play-btn:hover {
+  transform: scale(1.05);
+}
+
+.play-icon {
+  fill: #000000; /* Black triangle */
+  width: 24px;
+  height: 24px;
+}
+
+.card:hover .spotify-play-btn {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-10%, -10%) scale(1.1);
+  }
+
+/* .artistCard:hover .spotify-play-btn{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-25%, -25%) scale(1.1);
+} */

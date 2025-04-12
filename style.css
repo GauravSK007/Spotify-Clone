@@ -1,0 +1,322 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  z-index: 1;
+  background-color: black;
+}
+
+.nav-container {
+  align-items: center;
+  /* justify-content: space-around; */
+}
+
+.main-logo {
+  margin: 0px 20px;
+}
+
+.home {
+  border-radius: 50%;
+  background-color: #202020;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+}
+
+.b-logo {
+  margin-left: 50px;
+}
+
+.search-bar {
+  background-color: #202020;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  gap: 10px;
+}
+
+input {
+  width: 20vw;
+  border: none;
+  background-color: #202020;
+  color: white;
+  font-size: 18px;
+}
+
+.links {
+  margin-left: 150px;
+}
+.links ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  font-weight: 700;
+  color: grey;
+}
+
+a {
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+.install {
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.signUp {
+  margin-left: 20px;
+}
+
+.logIn {
+  border: none;
+  background-color: white;
+  padding: 15px 30px;
+  border-radius: 40px;
+  font-weight: 700;
+  margin-left: 30px;
+}
+
+.seperator {
+  margin: 0 20px;
+  font-size: 25px;
+}
+
+.side-bar {
+  height: auto;
+  width: 28vw;
+  background-color: #121212;
+  border-radius: 10px;
+  margin: 0 10px;
+  position: fixed;
+  top: 70px;
+}
+
+.sideUp {
+  width: 100%;
+  height: 450px;
+
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+
+*::-webkit-scrollbar {
+  width: 8px; /* thickness of the scrollbar */
+}
+
+/* Scrollbar thumb (the draggable part) */
+*::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 10px;
+}
+
+/* Scrollbar track (the background area) */
+*::-webkit-scrollbar-track {
+  background-color: #f0f0f0; /* light grey background */
+  border-radius: 10px;
+  background: transparent;
+}
+
+.songCard {
+  margin: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.playLogo {
+  margin-left: 50px;
+}
+
+.heading {
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+.sideDown {
+  width: 100%;
+  height: 150px;
+}
+
+.sideLink {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.sideDown button {
+  background: transparent;
+  border: 0.1px solid white;
+  border-radius: 20px;
+  padding: 5px;
+  color: white;
+  width: 100px;
+  display: flex;
+  gap: 5px;
+  margin: 10px;
+}
+
+.cookie {
+  color: white;
+  margin: 10px;
+}
+
+section{
+  width: 70vw;
+  height: 80vh;
+  position: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  top: 70px;
+  left: 29vw;
+  border-radius: 10px;
+}
+
+.content-box {
+  width: 70vw;
+  height: 3000px;
+  background-color: #121212;
+  
+  
+}
+
+.songControls {
+  height: 75px;
+  width: 70%;
+  background-color: rgba(24, 24, 24, 0.9);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+  position: fixed;
+  bottom: 0px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+#progressContainer {
+    width: 350px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+#progressBar {
+  width: 60%;
+  height: 100%;
+  background-color: #1db954; /* Spotify green */
+  border-radius: 5px;
+}
+
+
+.cardContainer{
+  display: flex;
+}
+
+.card{
+    width: 170px;
+    height: 270px;
+    margin: 5px 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+.card img{
+    margin: 10px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.cardInfo{
+    margin-left: 10px;
+
+}
+
+.artistName{
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+.card:hover{
+    background-color: #1F1F1A;
+}
+.artistCard:hover{
+    background-color: #1F1F1A;
+}
+
+.songsSection h1{
+  margin-left: 15px;
+}
+
+.artistSection{
+  display: flex;
+}
+
+.artistCard{
+    width: 170px;
+    height: 220px;
+    margin: 5px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.artistCard img{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.artistInfo{
+  position: relative;
+  right: 30px;
+}
+
+.artistInfo p{
+  font-size: 14px;
+  color: #b3b3b3;
+
+}
+
+
+

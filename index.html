@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="shortcut icon" href="Spotify_icon-icons.com_66783.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container flex">
+        <img class="main-logo invert" src="logo/logo.svg" alt="logo" />
+        <div class="home">
+          <img
+            class="invert"
+            src="logo/home-logo.svg"
+            alt="home"
+            width="25px" />
+        </div>
+
+        <div class="search-bar flex">
+          <span class="s-logo">
+            <img
+              class="invert"
+              src="logo/search-logo.svg"
+              alt="search"
+              width="25px" />
+          </span>
+          <input type="text" placeholder="What do you want to play?" />
+          <div class="seperator">|</div>
+          <span class="b-logo">
+            <img
+              class="invert"
+              src="logo/browse.svg"
+              alt="browse"
+              width="30px" />
+          </span>
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="">Premium</a></li>
+            <li><a href="">Support</a></li>
+            <li><a href="">Download</a></li>
+          </ul>
+        </div>
+        <div class="seperator">|</div>
+        <div class="install flex">
+          <img
+            class="invert"
+            src="logo/install.svg"
+            alt="install"
+            width="20px" />
+          <span>InstallApp</span>
+        </div>
+        <a class="signUp" href="">Sign up</a>
+        <button class="logIn">Log in</button>
+      </div>
+    </nav>
+    <main>
+      <div class="side-bar">
+        <div class="sideUp">
+          <div class="heading">
+            <p>Your Library</p>
+            <img src="logo/add.svg" alt="add" height="20px" class="invert" />
+          </div>
+          <ul>
+            <li>
+              <div class="songCard">
+                <img
+                  src="Cover/Lukas_Graham_-_7_Years.jpeg"
+                  alt="cover1"
+                  class="cover"
+                  height="40px" />
+                <div class="info">
+                  <div class="song">7 years</div>
+                  <div class="artist">Lukas Graham</div>
+                </div>
+                <div class="playLogo">
+                  <i class="fa-solid fa-circle-play"></i>
+                </div>
+                <div class="songTime">3:56</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="sideDown">
+          <div class="sideLink">
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/">Legal</a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/safetyandprivacy/"
+                >Safety & Privacy Center</a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/privacy-policy/"
+                >Privacy Policy</a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/cookies-policy/"
+                >Cookies</a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"
+                >About Ads</a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/accessibility/"
+                >Accessibility</a
+              >
+            </div>
+          </div>
+          <div>
+            <a
+              href="https://www.spotify.com/legal/cookies-policy/"
+              class="cookie"
+              >Cookies</a
+            >
+          </div>
+          <button>
+            <img
+              src="logo/earth.svg"
+              alt="earth"
+              class="invert"
+              height="20px" />
+            English
+          </button>
+        </div>
+      </div>
+      <section>
+        <div class="content-box">
+          <div class="songsSection">
+            <h1>Songs</h1>
+            <div class="cardContainer">
+              <div class="card">
+                <img src="Cover/Lukas_Graham_-_7_Years.jpeg" alt="" />
+                <div class="cardInfo">
+                  <div class="songName">7 Years</div>
+                  <div class="artistName">Lukas Graham</div>
+                </div>
+                <button class="spotify-play-btn" aria-label="Play">
+                  <svg viewBox="0 0 24 24" class="play-icon">
+                    <path d="M6 4l14 8-14 8z"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="card">
+                <img src="Cover/Passenger_-_Let_Her_Go.jpeg" alt="" />
+                <div class="cardInfo">
+                  <div class="songName">Let Her Go</div>
+                  <div class="artistName">Passenger</div>
+                </div>
+                <button class="spotify-play-btn" aria-label="Play">
+                  <svg viewBox="0 0 24 24" class="play-icon">
+                    <path d="M6 4l14 8-14 8z"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="card">
+                <img
+                  src="Cover/Gulshan Kumar Hariharan_-_Shree Hanuman Chalisa.jpeg"
+                  alt="" />
+                <div class="cardInfo">
+                  <div class="songName">Shree Hanuman Chalisa</div>
+                  <div class="artistName">Gulshan Kumar</div>
+                </div>
+                <button class="spotify-play-btn" aria-label="Play">
+                  <svg viewBox="0 0 24 24" class="play-icon">
+                    <path d="M6 4l14 8-14 8z"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="card">
+                <img src="Cover/Priyanka Meher, Rongpaz_-_Dhana.jpg" alt="" />
+                <div class="cardInfo">
+                  <div class="songName">Dhana</div>
+                  <div class="artistName">Priyanka Meher, Rongpaz</div>
+                </div>
+                <button class="spotify-play-btn" aria-label="Play">
+                  <svg viewBox="0 0 24 24" class="play-icon">
+                    <path d="M6 4l14 8-14 8z"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="card">
+                <img src="Cover//Benson Boone_-_Beautiful_Things.jpeg" alt="" />
+                <div class="cardInfo">
+                  <div class="songName">Beautiful Things</div>
+                  <div class="artistName">Benson Boone</div>
+                </div>
+                <button class="spotify-play-btn" aria-label="Play">
+                  <svg viewBox="0 0 24 24" class="play-icon">
+                    <path d="M6 4l14 8-14 8z"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="card">
+                <img src="Cover/Noizy_-_Follow_you.jpg" alt="" />
+                <div class="cardInfo">
+                  <div class="songName">Follow you</div>
+                  <div class="artistName">Noizy</div>
+                </div>
+                <button class="spotify-play-btn" aria-label="Play">
+                  <svg viewBox="0 0 24 24" class="play-icon">
+                    <path d="M6 4l14 8-14 8z"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <h1 style="margin: 20px">Popular Artists</h1>
+
+          <div class="artistSection">
+            <div class="artistCard">
+              <img
+                src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+                alt="photo" />
+              <div class="artistInfo">
+                <div>Pritam</div>
+                <p>Artist</p>
+              </div>
+            </div>
+            <div class="artistCard">
+              <img
+                src="https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7"
+                alt="photo" />
+              <div class="artistInfo">
+                <div>Arijit Singh</div>
+                <p>Artist</p>
+              </div>
+            </div>
+            <div class="artistCard">
+              <img
+                src="https://i.scdn.co/image/ab67616100005174b19af0ea736c6228d6eb539c"
+                alt="photo" />
+              <div class="artistInfo">
+                <div>A.R. Rahman</div>
+                <p>Artist</p>
+              </div>
+            </div>
+            <div class="artistCard">
+              <img
+                src="https://i.scdn.co/image/ab67616100005174b69f6182a27407318b632a5f"
+                alt="photo" />
+              <div class="artistInfo">
+                <div>Sachin-Jigar</div>
+                <p>Artist</p>
+              </div>
+            </div>
+            <div class="artistCard">
+              <img
+                src="https://i.scdn.co/image/ab6761610000517490b6c3d093f9b02aad628eaf"
+                alt="photo" />
+              <div class="artistInfo">
+                <div>Vishal-Shekhar</div>
+                <p>Artist</p>
+              </div>
+            </div>
+            <div class="artistCard">
+              <img
+                src="https://i.scdn.co/image/ab67616100005174c40600e02356cc86f0debe84"
+                alt="photo" />
+              <div class="artistInfo">
+                <div>Arif Aslam</div>
+                <p>Artist</p>
+              </div>
+            </div>
+          </div>
+          <div class="songControls">
+            <!-- <div class="pause"> <i class="fa-solid fa-circle-pause"></i></div> -->
+            <div class="controls">
+              <div class="backward">
+                <i class="fa-solid fa-backward-step"></i>
+              </div>
+              <div class="play">
+                <i class="fa-solid fa-circle-play"></i>
+              </div>
+              <div class="forward">
+                <i class="fa-solid fa-forward-step"> </i>
+              </div>
+            </div>
+            <div id="progressContainer">
+              <div id="progressBar"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
