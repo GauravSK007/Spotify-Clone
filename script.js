@@ -1,26 +1,14 @@
 console.log("This is js");
 
 async function main() {
-  let a = await fetch(
-    "/songs/"
-  );
-  let response = await a.text();
-  let div = document.createElement("div");
-  div.innerHTML = response;
-  let as = div.getElementsByTagName("a");
-  console.log(as)
-  let songs = [];
-  for (let index = 0; index < as.length; index++) {
-    const element = as[index];
-    if (element.href.endsWith(".mp3")) {
-      songs.push(element.href);
-    }
-  }
+  let res = await fetch("songs.json");
+  let songs = await res.json();
+  
   console.log(songs);
   //   let audio = new Audio(songs[2]);
   //   audio.play();
 
-  let href = songs[5];
+  let href = songs[0];
   console.log("this is link", href);
 
   // Step 1: Get file name only
@@ -57,7 +45,7 @@ async function main() {
   // document.body.append(img);
 
   function playSong() {
-    let audio = new Audio(songs[5]);
+    let audio = new Audio(songs[0]);
     audio.play();
     audio.addEventListener("loadedmetadata", () => {
       console.log("Length:", audio.duration); // in seconds
