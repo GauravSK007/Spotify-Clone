@@ -2,7 +2,7 @@ console.log("This is js");
 
 async function main() {
   let a = await fetch(
-    "http://127.0.0.1:3000/Web%20Dev%20code/test%20folder/Spotify%20Clone/songs/"
+    "/songs/"
   );
   let response = await a.text();
   let div = document.createElement("div");
