@@ -9,10 +9,76 @@ body {
   color: white;
 }
 
+.popupParent {
+  position: absolute;
+  z-index: 100;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.close {
+  position: relative;
+  bottom: -250px;
+  /* z-index: 105; */
+  cursor: pointer;
+}
+
+.popup {
+  padding: 20px;
+  position: absolute;
+  height: 408px;
+  width: 790px;
+  background: linear-gradient(to bottom, #3e1d1d, #323232);
+  z-index: 101;
+  border-radius: 10px;
+  display: flex;
+  /* justify-content: s; */
+  align-items: center;
+  gap: 10px;
+  /* background: linear-gradient(to bottom, #1a1f2b, #2b2f38, #3a3c42, #44434a); */
+  /* background: linear-gradient(to bottom, #0f1323, #1b2233, #2e3c44, #4e574d); */
+  /* background: linear-gradient(to bottom, #1b1f32, #2d3248, #464a5f, #5b5f6e); */
+}
+
+.popup img {
+  max-height: 300px;
+  margin: 0 20px;
+  border-radius: 10px;
+  box-shadow: 0 0px 13px 4px #1db954;
+}
+
+.popupContent {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.popupContent button {
+  padding: 15px 20px;
+  /* width: 150px; */
+  border-radius: 30px;
+  font-weight: 700;
+}
+
+.signup {
+  background-color: #1ed760;
+}
+.download {
+  border: 0.1px solid rgba(255, 255, 255, 0.697);
+  color: white;
+  background: transparent;
+}
+
 nav {
   width: 100%;
   height: 60px;
-  position: fixed;
+  /* position: fixed; */
   z-index: 1;
   background-color: black;
 }
@@ -142,6 +208,16 @@ a {
   cursor: pointer;
 }
 
+.info {
+  min-width: 175px;
+  overflow-x: hidden;
+}
+
+.info .artist {
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
 .playLogo {
   margin-left: 50px;
 }
@@ -159,7 +235,7 @@ a {
 }
 
 .sideLink {
-  margin: 10px;
+  margin: 30px 10px 10px 10px;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -183,8 +259,8 @@ a {
   margin: 10px;
 }
 
-section{
-  width: 70vw;
+section {
+  width: 76vw;
   height: 80vh;
   position: fixed;
   overflow-y: scroll;
@@ -194,12 +270,26 @@ section{
   border-radius: 10px;
 }
 
+.burger-box{
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.burger-box i{
+  font-size: 20px;
+  display: none;
+}
+
+.heading i{
+  display: none;
+}
+
 .content-box {
-  width: 70vw;
-  height: 3000px;
+  /* width: 75vw; */
+  height: auto;
   background-color: #121212;
-  
-  
 }
 
 .songControls {
@@ -217,16 +307,37 @@ section{
 }
 
 .controls {
-  font-size: 30px;
+  z-index: 20;
+  font-size: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
 }
 
+.backward {
+  font-size: 25px;
+  color: #b3b3b3;
+  cursor: pointer;
+}
+.forward {
+  font-size: 25px;
+  color: #b3b3b3;
+  cursor: pointer;
+}
+
+.play {
+  cursor: pointer;
+}
+
+.hoverControl:hover {
+  color: white;
+  text-shadow: 0px 0px 12px rgba(255, 255, 255, 0.5);
+}
+
 #progressContainer {
-    width: 350px;
-  height: 10px;
+  width: 350px;
+  height: 5px;
   background-color: #ccc;
   border-radius: 5px;
   cursor: pointer;
@@ -240,83 +351,119 @@ section{
   border-radius: 5px;
 }
 
-
-.cardContainer{
+.cardContainer {
   display: flex;
+  flex-wrap: wrap;
 }
 
-.card{
-    width: 170px;
-    height: 270px;
-    margin: 5px 5px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    position: relative;
+.card {
+  width: 170px;
+  height: 270px;
+  margin: 5px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
 }
-.card img{
-    margin: 10px;
-    width: 150px;
-    border-radius: 5px;
-}
-
-.cardInfo{
-    margin-left: 10px;
-
+.card img {
+  margin: 10px;
+  width: 150px;
+  border-radius: 5px;
 }
 
-.artistName{
-    font-size: 14px;
-    color: #b3b3b3;
+.cardInfo {
+  margin-left: 10px;
 }
 
-.card:hover{
-    background-color: #1F1F1A;
-}
-.artistCard:hover{
-    background-color: #1F1F1A;
+.artistName {
+  font-size: 14px;
+  color: #b3b3b3;
 }
 
-.songsSection h1{
+.card:hover {
+  background-color: #1f1f1a;
+}
+.artistCard:hover {
+  background-color: #1f1f1a;
+}
+
+.songsSection h1 {
   margin-left: 15px;
 }
 
-.artistSection{
+.artistSection {
   display: flex;
+  flex-wrap: wrap;
 }
 
-.artistCard{
-    width: 170px;
-    height: 220px;
-    margin: 5px 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    position: relative;
+.artistCard {
+  width: 170px;
+  height: 220px;
+  margin: 5px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
 }
 
-.artistCard img{
+.artistCard img {
   height: 150px;
   width: 150px;
   border-radius: 50%;
 }
 
-.artistInfo{
+.artistInfo {
   position: relative;
   right: 30px;
 }
 
-.artistInfo p{
+.artistInfo p {
   font-size: 14px;
   color: #b3b3b3;
-
 }
 
+footer {
+  display: flex;
+  margin-top: 50px;
+}
 
+.footer-links {
+  margin-left: 20px;
+  display: flex;
+  gap: 80px;
+}
 
+.footer-section ul li {
+  list-style: none;
+  margin: 5px 0;
+}
+
+.media {
+  margin-left: 100px;
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  background-color: #292929;
+  border-radius: 50%;
+}
+
+.time-progressBar {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
