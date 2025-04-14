@@ -7,7 +7,6 @@
 }
 
 .spotify-play-btn {
-    
   background-color: #1db954; /* Spotify green */
   border: none;
   border-radius: 50%;
@@ -39,13 +38,84 @@
 }
 
 .card:hover .spotify-play-btn {
-    opacity: 1;
-    pointer-events: auto;
-    transform: translate(-10%, -10%) scale(1.1);
-  }
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-10%, -10%) scale(1.1);
+}
 
 /* .artistCard:hover .spotify-play-btn{
     opacity: 1;
     pointer-events: auto;
     transform: translate(-25%, -25%) scale(1.1);
 } */
+
+.search-bar input,
+.seperator,
+.b-logo {
+  transition: all 0.3s;
+}
+
+.side-bar {
+  transition: all 0.3s;
+}
+
+@media (max-width: 1300px) {
+  .links,
+  .search-bar input,
+  .seperator,
+  .b-logo {
+    display: none;
+    transition: all 1s;
+  }
+  .nav-container {
+    justify-content: space-around;
+  }
+
+  .side-bar {
+    display: none;
+    width: 100%;
+    
+    z-index: 5;
+
+  }
+
+  .burger-box i{
+    
+    display:inline;
+  }
+
+  .heading i{
+    display: inline;
+  }
+
+  section {
+    width: 100vw;
+    left: 0;
+  }
+  .songControls{
+    width: 100%;
+  }
+  .cardContainer{
+    justify-content: space-evenly;
+  }
+  .artistSection{
+    justify-content: space-evenly;
+  }
+
+  
+}
+
+@media (max-width: 500px) {
+  .media{
+    display: none;
+  }
+  #progressContainer {
+    width: 250px;
+  }
+  .logIn {
+    display: none;
+  }
+  nav a{
+    display: none;
+  }
+}
