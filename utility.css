@@ -81,6 +81,10 @@
 
   }
 
+  .sideDown{
+    display: none;
+  }
+
   .burger-box i{
     
     display:inline;
