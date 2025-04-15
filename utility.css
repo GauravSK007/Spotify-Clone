@@ -74,8 +74,10 @@
   .side-bar {
     display: none;
     width: 100%;
-    
+    margin: 0;
     z-index: 5;
+    height: 72%;
+        overflow-y: hidden;
 
   }
 
@@ -110,7 +112,7 @@
     display: none;
   }
   #progressContainer {
-    width: 250px;
+    width: 215px;
   }
   .logIn {
     display: none;
